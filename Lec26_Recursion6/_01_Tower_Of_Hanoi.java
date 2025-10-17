@@ -3,7 +3,8 @@ public class _01_Tower_Of_Hanoi {
         int n = 3;
         toh(n, "A", "B", "C");
     }    
-    
+    // bhai recursion tu n-1 disk ko helper pe laga destination ki madad le 
+    // uske baad last disk to src to destination le ja
     public static void toh(int n, String src, String hlp, String des) {
         if (n == 0) {
             return;
